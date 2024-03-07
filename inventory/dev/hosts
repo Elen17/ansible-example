@@ -1,0 +1,6 @@
+[AWS]
+    13.60.23.210 ansible_user=ubuntu
+[AWS:vars]
+    user_name=ubuntu
+    service_name=node_exporter
+    listen_port=9100
