@@ -19,6 +19,8 @@
     restart_policy: always
     image: prom/prometheus:latest
     recreate: true
+    networks:
+    - name: "{{ network }}"
     volumes:
       - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - /etc/prometheus/prometheus_alerts_rules.yml:/etc/prometheus/prometheus_alerts_rules.yml
